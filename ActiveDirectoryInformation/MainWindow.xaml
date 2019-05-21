@@ -1,0 +1,18 @@
+﻿<Window x:Name="windowMain" x:Class="ActiveDirectoryInformation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Active Directory Information" Height="429.684" Width="713.474" Icon="System.ico" Loaded="windowMain_Loaded">
+    <Grid x:Name="GridMain">
+        <DataGrid x:Name="datagridResult" Margin="10,42,10,10"/>
+        <Button x:Name="buttonShow" Content="Show" Margin="353,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.988,-0.445" Click="buttonShow_Click" HorizontalAlignment="Left" Width="75"/>
+        <Button x:Name="buttonExport" Content="Export" Margin="577,10,0,0" VerticalAlignment="Top" Click="buttonExport_Click" HorizontalAlignment="Left" Width="75"/>
+        <RadioButton x:Name="radiobuttonExcel" Content="Excel" HorizontalAlignment="Left" Margin="519,22,0,0" VerticalAlignment="Top" GroupName="Export" IsChecked="True"/>
+        <RadioButton x:Name="radiobuttonCVS" Content="CSV" HorizontalAlignment="Left" Margin="519,7,0,0" VerticalAlignment="Top" GroupName="Export" IsChecked="True"/>
+        <RadioButton x:Name="radiobuttonUsers" Content="Users" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" IsChecked="True" GroupName="Show"/>
+        <RadioButton x:Name="radiobuttonComputers" Content="Computers" HorizontalAlignment="Left" Margin="10,22,0,0" VerticalAlignment="Top" GroupName="Show" RenderTransformOrigin="0.61,-0.667" Checked="radiobuttonComputers_Checked" Unchecked="radiobuttonComputers_Unchecked"/>
+        <ComboBox x:Name="comboBoxGroups" HorizontalAlignment="Left" Margin="97,0,0,0" VerticalAlignment="Top" Width="237"/>
+        <CheckBox x:Name="checkBoxPass" Content="Check Pass:" HorizontalAlignment="Left" Margin="97,22,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.887,0.2" Width="91" Checked="checkBoxPass_Checked" Unchecked="checkBoxPass_Unchecked"/>
+        <PasswordBox x:Name="PasswordBoxPass" HorizontalAlignment="Left" Margin="183,22,0,0" VerticalAlignment="Top" Width="151" Height="20"/>
+
+    </Grid>
+</Window>
